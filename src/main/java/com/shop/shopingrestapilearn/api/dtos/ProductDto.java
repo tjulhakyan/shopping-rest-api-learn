@@ -1,12 +1,10 @@
 package com.shop.shopingrestapilearn.api.dtos;
 
-import com.shop.shopingrestapilearn.api.dtos.embeddeble.DimensionEmbeddable;
+import com.shop.shopingrestapilearn.api.dtos.embeddeble.Dimension;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.ElementCollection;
-import javax.persistence.Embedded;
 import java.util.List;
 
 
@@ -18,14 +16,13 @@ public class ProductDto {
     private Long categoryId;
     private String name;
     private Double price;
-    private String description;
     private Boolean isActive;
+    private Integer productQuantity;
 
-    @ElementCollection
-    private List<String> images;
+    private List<String> description;
+    private List<String> imageUrls;
 
-    @Embedded
-    private DimensionEmbeddable dimension;
+    private Dimension dimension;
 }
 
 

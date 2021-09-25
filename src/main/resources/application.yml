@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://127.0.0.5:3306/orinak
+    url: jdbc:mysql://127.0.0.5:3306/shopping_rest_api_learn
     username: admin
     password: admin
     driver-class-name: com.mysql.cj.jdbc.Driver

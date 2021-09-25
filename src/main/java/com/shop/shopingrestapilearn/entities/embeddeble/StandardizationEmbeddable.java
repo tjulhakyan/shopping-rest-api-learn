@@ -1,4 +1,4 @@
-package com.shop.shopingrestapilearn.api.dtos.embeddeble;
+package com.shop.shopingrestapilearn.entities.embeddeble;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
